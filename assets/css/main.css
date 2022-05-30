@@ -1,5 +1,11 @@
+/* normalize */
 @import './normalize.css';
+
+/* fonts */
 @import '../fonts/fonts.css';
+
+/* blocks */
+
 
 :root {
     --white: #ffffff;
@@ -18,8 +24,4 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
-}
-
-* {
-    font-family: 'Roboto', sans-serif;
 }
