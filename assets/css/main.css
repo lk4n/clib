@@ -1,4 +1,10 @@
+/* sanitize */
+@import './sanitize.css';
+
+/* fonts */
 @import '../fonts/fonts.css';
+
+/* blocks */
 
 :root {
     --white: #ffffff;
