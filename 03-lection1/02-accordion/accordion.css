@@ -1,1 +1,22 @@
-/* Стилизация аккордеона */
+.accordion {
+    /* min-width: 191px; */
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 8px;
+    flex: 1 0 200px;
+    background: var(--accordion-bgc);
+    font: 16px/24px "Inter", sans-serif;
+    color: #000000;
+}
+
+.accordion__item {
+    padding: 24px 32px;
+    border: 1px solid var(--accordion-border);
+    border-radius: 8px;
+}
+
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion__content {}

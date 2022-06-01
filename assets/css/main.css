@@ -23,6 +23,12 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+
+    /* accordion block colors */
+    --accordion-bgc: var(--white);
+    --accordion-border: var(--grey-3);
+    --accordion-arrow: var(--grey-4);
 }
 
 * {

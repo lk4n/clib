@@ -13,33 +13,59 @@
         .demo {
             margin-top: 50px;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: baseline;
-            gap: 50px;
+            height: 100%;
+
+            border: 1px solid red;
         }
 
         .demo__item {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 10px;
-        }
+            width: 730px;
 
-        .demo__item_width_200 {
-            width: 200px;
+            border: 1px solid blue;
         }
     </style>
 </head>
 
 <body>
-    <details>
-        <summary>
-            Accordion item
-        </summary>
-        <p>
-            Hidden content
-        </p>
-    </details>
+    <div class="demo">
+
+        <h1>Accordion</h1>
+
+        <div class="demo__item">
+            <div class="accordion">
+
+                <details class="accordion__item">
+                    <summary class="accordion__summary">
+                        Accordion item
+                    </summary>
+                    <p class="accordion__content">
+                        Lorem
+                    </p>
+                </details>
+
+                <details class="accordion__item">
+                    <summary class="accordion__summary">
+                        Accordion item
+                    </summary>
+                    <p class="accordion__content">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt sapiente ex in expedita, iste corrupti ipsam repudiandae recusandae iure. Placeat, at eligendi. Eum, nostrum animi.
+                    </p>
+                </details>
+
+                <details class="accordion__item">
+                    <summary class="accordion__summary">
+                        Accordion item
+                    </summary>
+                    <p class="accordion__content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illum impedit reiciendis tempore tenetur cum aperiam quis deserunt similique cupiditate ullam ad, quisquam architecto qui iusto. Impedit quis distinctio ea laboriosam blanditiis non odit dolore voluptatum vel minus, eaque iure porro atque deleniti nostrum debitis, cumque maxime natus perspiciatis, velit aut! Earum repudiandae, assumenda tenetur quibusdam dolores aut, commodi nihil quo a alias cumque! Numquam, maiores eaque ex enim nam sint deserunt neque nemo velit voluptate quasi ipsa qui magni ratione quis officiis laudantium corporis facere, accusamus quos? Inventore debitis fuga accusantium? Aspernatur ea repudiandae dicta magni obcaecati est molestias.
+                    </p>
+                </details>
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
