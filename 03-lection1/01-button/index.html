@@ -1,27 +1,90 @@
 <!DOCTYPE html>
-<!-- Страница с кнопкой -->
-<html lang="ru">
-    <head>
-
-    </head>
-    <body>
-
-    </body>
-</html>
-
-
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Lex K">
-    <title>Component: Button</title> 
+    <title>Component: Button</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="stylesheet" href="./button.css">
+    <style>
+        .demo {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 50px;
+        }
+
+        .demo__item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .demo__item_width_200 {
+            width: 200px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="demo">
+        <div class="demo__item">
+            <h3>Buttons</h3>
+        </div>
+
+        <div class="demo__item">
+            <p>DEFAULT</p>
+            <p>HOVER</p>
+            <p>DISABLED</p>
+        </div>
+
+        <div class="demo__item">
+            <button class="button button_primary">Primary</button>
+
+            <button class="button button_primary button__primary_hover-test">Primary</button>
+
+            <button class="button button_primary" disabled>Primary</button>
+        </div>
+
+        <div class="demo__item">
+            <button class="button button_secondary">Secondary</button>
+
+            <button class="button button_secondary button_secondary_hover-test">Secondary</button>
+
+            <button class="button button_secondary" disabled>Secondary</button>
+        </div>
+
+        <div class="demo__item">
+            <button class="button button_alternate">Alternate</button>
+
+            <button class="button button_alternate button_alternate_hover-test">Alternate</button>
+
+            <button class="button button_alternate" disabled>Alternate</button>
+        </div>
+    </div>
+    <div class="demo">
+        <div class="demo__item">
+            <h3>Button width and height</h3>
+        </div>
+
+        <div class="demo__item">
+            <button class="button button_primary">Primary very very very very very very long</button>
+
+            <button class="button button_primary">Primary</button>
+
+            <button class="button button_primary"></button>
+        </div>
+        <div class="demo__item demo__item_width_200">
+            <button class="button button_primary">Primary very very very very very very very very very very
+                long</button>
+        </div>
+
+    </div>
 </body>
+
 </html>
