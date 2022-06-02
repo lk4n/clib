@@ -3,7 +3,7 @@
     flex-flow: column;
     align-items: stretch;
     row-gap: 8px;
-    font: 16px/24px "Inter", sans-serif;
+    font: normal 16px/24px Inter, sans-serif;
     background: var(--accordion-bgc);
 }
 

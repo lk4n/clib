@@ -33,7 +33,3 @@
     --accordion-color-on-open: var(--black-2);
     --accordion-color-content: var(--grey-4);
 }
-
-* {
-    font-family: 'Roboto', sans-serif;
-}
