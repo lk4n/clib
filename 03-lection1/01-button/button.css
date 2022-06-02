@@ -26,7 +26,6 @@
     background: var(--button-bgc-primary);
 }
 
-.button__primary_hover-test,
 .button_primary:hover {
     background: var(--button-bgc-primary-on-hover);
 }
@@ -35,7 +34,6 @@
     background: var(--button-bgc-secondary);
 }
 
-.button_secondary_hover-test,
 .button_secondary:hover {
     background: var(--button-bgc-secondary-on-hover);
 }
@@ -46,7 +44,19 @@
     border: 1px solid var(--button-border-alternate);
 }
 
-.button_alternate_hover-test,
 .button_alternate:hover {
+    border: 1px solid var(--button-border-alternate-on-hover)
+}
+
+/* Debug */
+.button__primary_hover-test {
+    background: var(--button-bgc-primary-on-hover);
+}
+
+.button_secondary_hover-test {
+    background: var(--button-bgc-secondary-on-hover);
+}
+
+.button_alternate_hover-test {
     border: 1px solid var(--button-border-alternate-on-hover)
 }
