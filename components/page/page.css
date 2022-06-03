@@ -1,17 +1,9 @@
 .page {
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-flow: column;
-
-    border: 1px solid black;
 }
 
-.page_header {
-
+.page_container {
+    flex: 1;
 }
-
-.page_footer {
-
-}
-
-

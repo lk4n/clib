@@ -1,15 +1,18 @@
 .footer {
-    font: normal 500 38px/48px Inter, sans-serif;
+    /* 136px padding-bottom too much as for me */
+    padding: 72px 0 36px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
     color: var(--footer-color);
-
-    border: 1px solid blue;
 }
 
 .footer__title {
-
+    font: 500 38px/48px Inter, sans-serif;
 }
 
 .footer__text {
-
-    
+    max-width: 640px;
+    font: 400 16px/24px Inter, sans-serif;
 }
