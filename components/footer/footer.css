@@ -1,0 +1,15 @@
+.footer {
+    font: normal 500 38px/48px Inter, sans-serif;
+    color: var(--footer-color);
+
+    border: 1px solid blue;
+}
+
+.footer__title {
+
+}
+
+.footer__text {
+
+    
+}

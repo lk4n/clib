@@ -2,10 +2,10 @@
 @import './sanitize.css';
 
 /* fonts */
-@import '../fonts/fonts.css';
+@import './../fonts/fonts.css';
 
 /* blocks */
-
+@import './../../components/page/page.css';
 
 :root {
     --white: #ffffff;
@@ -24,4 +24,8 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    /* footer block colors */
+    --footer-color: var(--black);
 }
+
