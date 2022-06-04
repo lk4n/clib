@@ -46,13 +46,3 @@
     padding: 0 32px 32px 32px;
     color: var(--accordion-color-content);
 }
-
-/* Debug */
-.accordion_width_content {
-    align-items: flex-start;
-}
-
-.accordion p {
-    margin: 0;
-    padding: 0;
-}
