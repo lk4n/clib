@@ -7,7 +7,7 @@
     color: var(--button-color);
     background: none;
     text-align: center;
-    font: normal 500 16px/19px 'Roboto', sans-serif;
+    font: 500 16px/19px Roboto, sans-serif;
     cursor: pointer;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
@@ -45,18 +45,5 @@
 }
 
 .button_alternate:hover {
-    border: 1px solid var(--button-border-alternate-on-hover)
-}
-
-/* Debug */
-.button__primary_hover-test {
-    background: var(--button-bgc-primary-on-hover);
-}
-
-.button_secondary_hover-test {
-    background: var(--button-bgc-secondary-on-hover);
-}
-
-.button_alternate_hover-test {
     border: 1px solid var(--button-border-alternate-on-hover)
 }

@@ -37,7 +37,3 @@
     --button-border-alternate: var(--grey-3);
     --button-border-alternate-on-hover: var(--black);
 }
-
-* {
-    font-family: 'Roboto', sans-serif;
-}
