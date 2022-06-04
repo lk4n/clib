@@ -42,7 +42,7 @@
 }
 
 .accordion__content {
-    /* margin: -10px 0 0;  conflicts with <summary> outline */
+    /* margin: -10px 0 0;  conflicts with summary:focus outline */
     padding: 0 32px 32px 32px;
     color: var(--accordion-color-content);
 }
