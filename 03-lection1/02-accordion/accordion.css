@@ -10,7 +10,7 @@
 .accordion__item {
     border: 1px solid var(--accordion-border);
     border-radius: 8px;
-    box-shadow: 0 0.1rem 1rem -0.5rem rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0 0.1rem 1rem -0.5rem rgba(0, 0, 0, 0.4); */
     color: var(--accordion-color);
     overflow: hidden;
 }
@@ -42,7 +42,7 @@
 }
 
 .accordion__content {
-    margin: -10px 0 0;
+    /* margin: -10px 0 0;  conflicts with <summary> outline */
     padding: 0 32px 32px 32px;
     color: var(--accordion-color-content);
 }
