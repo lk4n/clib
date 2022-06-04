@@ -3,7 +3,6 @@
 }
 
 .header__title {
-    margin: 0;
-    padding: 96px 0 77px 160px;
+    margin: 96px 0 77px 160px;
     font: 500 50px/64px Inter, sans-serif;
 }

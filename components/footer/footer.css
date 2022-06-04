@@ -1,5 +1,5 @@
 .footer {
-    /* 136px padding-bottom too much as for me */
+    /* 136px padding-bottom too much as for me, 36px better */
     padding: 72px 0 36px;
     display: flex;
     flex-flow: column;
