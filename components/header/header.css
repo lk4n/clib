@@ -1,8 +1,10 @@
 .header {
+    padding: 96px 0 77px;
+    background-color: var(--header-bgc);
     color: var(--header-color);
 }
 
 .header__title {
-    margin: 96px 0 77px 160px;
+    margin: 0;
     font: 500 50px/64px Inter, sans-serif;
 }

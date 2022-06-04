@@ -6,8 +6,9 @@
 
 /* blocks */
 @import './../../components/page/page.css';
-@import './../../components/header/header.css';
 @import './../../components/container/container.css';
+@import './../../components/header/header.css';
+@import './../../components/preview/preview.css';
 @import './../../components/footer/footer.css';
 
 :root {
@@ -30,12 +31,14 @@
     --secondary: var(--purple);
 
     /* header block colors */
+    --header-bgc: var(--white);
     --header-color: var(--black);
 
-    /* container block colors */
-    --container-bgc: var(--grey-5);
+    /* preview block colors */
+    --preview-bgc: var(--grey-5);
 
     /* footer block colors */
+    --footer-bgc: var(--white);
     --footer-color: var(--black);
 }
 
