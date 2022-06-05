@@ -20,6 +20,10 @@
 .button:disabled {
     opacity: 0.5;
     pointer-events: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .button_primary {
