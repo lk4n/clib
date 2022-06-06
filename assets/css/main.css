@@ -2,9 +2,14 @@
 @import './sanitize.css';
 
 /* fonts */
-@import '../fonts/fonts.css';
+@import './../fonts/fonts.css';
 
 /* blocks */
+@import './../../components/page/page.css';
+@import './../../components/header/header.css';
+@import './../../components/preview/preview.css';
+@import './../../components/footer/footer.css';
+@import './../../components/container/container.css';
 
 :root {
     --white: #ffffff;
@@ -19,6 +24,7 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #F9FAFC;
 
     --error: var(--red);
     --success: var(--blue-1);
@@ -36,4 +42,22 @@
     --button-bgc-alternate: var(--white);
     --button-border-alternate: var(--grey-3);
     --button-border-alternate-on-hover: var(--black);
+    --primary: var(--blue);
+    --secondary: var(--purple);
+
+    /* header block colors */
+    --header-bgc: var(--white);
+    --header-color: var(--black);
+
+    /* preview block colors */
+    --preview-bgc: var(--grey-5);
+
+    /* footer block colors */
+    --footer-bgc: var(--white);
+    --footer-color: var(--black);
+}
+
+html,
+body {
+    height: 100%;
 }
