@@ -25,8 +25,8 @@
             gap: 10px;
         }
 
-        .demo__item_width_200 {
-            width: 200px;
+        .demo__item_width_300 {
+            width: 250px;
         }
 
         /* Debug block*/
@@ -40,6 +40,14 @@
 
         .button_alternate_hover-test {
             border: 1px solid var(--button-border-alternate-on-hover)
+        }
+
+        .button_s_small {
+            width: 200px;
+        }
+
+        .button_s_inherit {
+            width: inherit;
         }
     </style>
 </head>
@@ -92,9 +100,10 @@
 
             <button class="button button_primary"></button>
         </div>
-        <div class="demo__item demo__item_width_200">
-            <button class="button button_primary">Primary very very very very very very very very very very
-                long</button>
+        <div class="demo__item demo__item_width_300">
+            <button class="button button_primary button_s_inherit">Size inherit</button>
+            <button class="button button_secondary button_s_small">Size small</button>
+            <button class="button button_alternate button_s_small">Wrapped text here</button>
         </div>
 
     </div>
