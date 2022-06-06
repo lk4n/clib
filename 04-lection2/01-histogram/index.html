@@ -11,27 +11,22 @@
     <link rel="stylesheet" href="./histogram.css">
     <style>
         .demo {
-            margin-top: 50px;
             display: flex;
             justify-content: center;
             align-items: baseline;
-            column-gap: 50px;
+            gap: 50px;
         }
 
-        .demo__item {}
-
-        .demo__item_width_730 {
-            width: 730px;
+        .demo__item {
+            margin: 30px;
         }
 
-        /* Debug block*/
-        .accordion_width_content {
-            align-items: flex-start;
+        .demo__item_width_400 {
+            width: 400px;
         }
 
-        .accordion p {
-            margin: 0;
-            padding: 0;
+        .demo__item_width_full {
+            width: 100%;
         }
     </style>
 </head>
@@ -41,10 +36,101 @@
         <div class="demo__item">
             <h1>Histogram</h1>
         </div>
-        <div class="demo__item">
-            
-            
+        <div class="demo__item demo__item_width_400">
 
+            <section class="histogram">
+
+                <div class="histogram__info">
+                    <div class="histogram_header">
+                        <h3 class="histogram__title">Total orders</h3>
+                        <p class="histogram__number">50254</p>
+                    </div>
+                    <a href="#" class="histogram__link">View all</a>
+                </div>
+
+                <div class="histogram__chart">
+                    <div class="histogram__column" style="height:100%"></div>
+                    <div class="histogram__column" style="height:70%"></div>
+                    <div class="histogram__column" style="height:44%"></div>
+                    <div class="histogram__column" style="height:78%"></div>
+                    <div class="histogram__column" style="height:44%"></div>
+                    <div class="histogram__column" style="height:60%"></div>
+                    <div class="histogram__column" style="height:78%"></div>
+                    <div class="histogram__column" style="height:100%"></div>
+                    <div class="histogram__column" style="height:22%"></div>
+                    <div class="histogram__column" style="height:44%"></div>
+                    <div class="histogram__column" style="height:60%"></div>
+                    <div class="histogram__column" style="height:70%"></div>
+                    <div class="histogram__column" style="height:22%"></div>
+                    <div class="histogram__column" style="height:100%"></div>
+                    <div class="histogram__column" style="height:22%"></div>
+                    <div class="histogram__column" style="height:78%"></div>
+                    <div class="histogram__column" style="height:60%"></div>
+                    <div class="histogram__column" style="height:44%"></div>
+                    <div class="histogram__column" style="height:70%"></div>
+                    <div class="histogram__column" style="height:60%"></div>
+                    <div class="histogram__column" style="height:22%"></div>
+                    <div class="histogram__column" style="height:78%"></div>
+                    <div class="histogram__column" style="height:70%"></div>
+                    <div class="histogram__column" style="height:90%"></div>
+                    <div class="histogram__column" style="height:60%"></div>
+                    <div class="histogram__column" style="height:22%"></div>
+                    <div class="histogram__column" style="height:60%"></div>
+                    <div class="histogram__column" style="height:22%"></div>
+                    <div class="histogram__column" style="height:70%"></div>
+                    <div class="histogram__column" style="height:34%"></div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <div class="demo">
+        <div class="demo__item demo__item_width_full">
+
+            <section class="histogram">
+
+                <div class="histogram__info">
+                    <div class="histogram_header">
+                        <h4 class="histogram__title">Total orders</h4>
+                        <div class="histogram__number">50254</div>
+                    </div>
+                    <a href="#" class="histogram__link">View All</a>
+                </div>
+
+                <div class="histogram__chart">
+                    <div class="histogram__column" style="height:100%"></div>
+                    <div class="histogram__column" style="height:70%"></div>
+                    <div class="histogram__column" style="height:44%"></div>
+                    <div class="histogram__column" style="height:78%"></div>
+                    <div class="histogram__column" style="height:44%"></div>
+                    <div class="histogram__column" style="height:60%"></div>
+                    <div class="histogram__column" style="height:78%"></div>
+                    <div class="histogram__column" style="height:100%"></div>
+                    <div class="histogram__column" style="height:22%"></div>
+                    <div class="histogram__column" style="height:44%"></div>
+                    <div class="histogram__column" style="height:60%"></div>
+                    <div class="histogram__column" style="height:70%"></div>
+                    <div class="histogram__column" style="height:22%"></div>
+                    <div class="histogram__column" style="height:100%"></div>
+                    <div class="histogram__column" style="height:22%"></div>
+                    <div class="histogram__column" style="height:78%"></div>
+                    <div class="histogram__column" style="height:60%"></div>
+                    <div class="histogram__column" style="height:44%"></div>
+                    <div class="histogram__column" style="height:70%"></div>
+                    <div class="histogram__column" style="height:60%"></div>
+                    <div class="histogram__column" style="height:22%"></div>
+                    <div class="histogram__column" style="height:78%"></div>
+                    <div class="histogram__column" style="height:70%"></div>
+                    <div class="histogram__column" style="height:90%"></div>
+                    <div class="histogram__column" style="height:60%"></div>
+                    <div class="histogram__column" style="height:22%"></div>
+                    <div class="histogram__column" style="height:60%"></div>
+                    <div class="histogram__column" style="height:22%"></div>
+                    <div class="histogram__column" style="height:70%"></div>
+                    <div class="histogram__column" style="height:34%"></div>
+                </div>
+
+            </section>
         </div>
     </div>
 </body>
