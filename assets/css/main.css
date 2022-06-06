@@ -16,8 +16,10 @@
     --black-1: #000000;
     --black-2: #212429;
     --pink: #F784AD;
-    --purple: #7048E8;
-    --blue: #374FC7;
+    --purple-1: #7048E8;
+    --purple-2: #5028C6;
+    --blue-1: #4263EB;
+    --blue-2: #2342C0;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
@@ -26,10 +28,21 @@
     --grey-5: #F9FAFC;
 
     --error: var(--red);
-    --success: var(--blue);
+    --success: var(--blue-1);
 
-    --primary: var(--blue);
-    --secondary: var(--purple);
+    --primary: var(--blue-1);
+    --secondary: var(--purple-1);
+
+    /* button block colors */
+    --button-color: var(--white);
+    --button-color-alternate: var(--grey-4);
+    --button-bgc-primary: var(--primary);
+    --button-bgc-primary-on-hover: var(--blue-2);
+    --button-bgc-secondary: var(--secondary);
+    --button-bgc-secondary-on-hover: var(--purple-2);
+    --button-bgc-alternate: var(--white);
+    --button-border-alternate: var(--grey-3);
+    --button-border-alternate-on-hover: var(--black);
 
     /* accordion block colors */
     --accordion-bgc: var(--white);
