@@ -12,27 +12,27 @@
 .histogram__info {
     display: flex;
     justify-content: space-between;
-}
-
-.histogram_header {
+    font: 16px/24px Inter, sans-serif;
     color: var(--histogram-color);
 }
 
+.histogram__header {}
+
 .histogram__title {
     margin: 0;
-    font: 400 16px/24px Inter, sans-serif;
+    font-weight: normal;
     opacity: 0.8;
 }
 
 .histogram__number {
     margin: 6px 0 0;
-    font: 400 20px/26px Inter, sans-serif;
+    font-size: 20px;
+    line-height: 26px;
 }
 
 .histogram__link {
     margin-top: 3px;
     text-decoration: none;
-    font: 400 16px/24px Inter, sans-serif;
     color: var(--histogram-color-link);
 }
 
