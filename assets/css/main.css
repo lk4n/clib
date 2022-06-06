@@ -13,7 +13,8 @@
 
 :root {
     --white: #ffffff;
-    --black: #212429;
+    --black-1: #000000;
+    --black-2: #212429;
     --pink: #F784AD;
     --purple: #7048E8;
     --blue: #374FC7;
@@ -29,6 +30,13 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    /* accordion block colors */
+    --accordion-bgc: var(--white);
+    --accordion-border: var(--grey-3);
+    --accordion-color: var(--black-1);
+    --accordion-color-on-open: var(--black-2);
+    --accordion-color-content: var(--grey-4);
 
     /* header block colors */
     --header-bgc: var(--white);
