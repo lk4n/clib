@@ -50,7 +50,6 @@
 }
 
 .histogram__column {
-    height: 100%;
     flex: auto;
     background: var(--histogram-bgc-chart);
     transition: background 400ms ease-in;
