@@ -1,9 +1,5 @@
 .histogram {
     padding: 16px 24px 24px;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    row-gap: 39px;
     background: var(--histogram-bgc);
     border: 1px solid var(--histogram-border);
     border-radius: 8px;
@@ -42,6 +38,7 @@
 }
 
 .histogram__chart {
+    margin-top: 39px;
     height: 50px;
     display: flex;
     flex-flow: row wrap-reverse;
@@ -49,7 +46,6 @@
 }
 
 .histogram__column {
-    height: 100%;
     flex: auto;
     background: var(--histogram-bgc-chart);
     transition: background 400ms ease-in;
