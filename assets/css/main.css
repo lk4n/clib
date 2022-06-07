@@ -61,6 +61,11 @@
     /* footer block colors */
     --footer-bgc: var(--white);
     --footer-color: var(--black);
+
+    /* skeleton block colors */
+    --skeleton-bgc: var(--white);
+    --skeleton-bgc-item: var(--grey-2);
+    --skeleton-border: var(--grey-3);
 }
 
 html,
