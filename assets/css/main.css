@@ -72,11 +72,11 @@
 
     /* histogram */
     --histogram-bgc: var(--white);
+    --histogram-bgc-chart: var(--blue-1);
     --histogram-border: var(--grey-3);
     --histogram-color: var(--black-2);
     --histogram-color-link: var(--blue-1);
     --histogram-color-link-on-hover: var(--blue-2);
-    --histogram-bgc-chart: var(--blue-1);
 }
 
 html,

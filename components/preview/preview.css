@@ -1,10 +1,9 @@
 .preview {
+    padding: 68px 0;
     background-color: var(--preview-bgc);
 }
 
 .preview_container {
-    margin-top: 68px;
-    margin-bottom: 68px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
