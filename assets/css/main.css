@@ -11,7 +11,9 @@
 @import './../../components/footer/footer.css';
 @import './../../components/container/container.css';
 
+/* Vars */
 :root {
+    /** Common **/
     --white: #ffffff;
     --black-1: #000000;
     --black-2: #212429;
@@ -33,7 +35,20 @@
     --primary: var(--blue-1);
     --secondary: var(--purple-1);
 
-    /* button block colors */
+    /** Macro blocks **/
+    /* header */
+    --header-bgc: var(--white);
+    --header-color: var(--black);
+
+    /* preview */
+    --preview-bgc: var(--grey-5);
+
+    /* footer */
+    --footer-bgc: var(--white);
+    --footer-color: var(--black);
+
+    /** Micro blocks **/
+    /* Button */
     --button-color: var(--white);
     --button-color-alternate: var(--grey-4);
     --button-bgc-primary: var(--primary);
@@ -44,28 +59,25 @@
     --button-border-alternate: var(--grey-3);
     --button-border-alternate-on-hover: var(--black);
 
-    /* accordion block colors */
+    /* Accordion */
     --accordion-bgc: var(--white);
     --accordion-border: var(--grey-3);
     --accordion-color: var(--black-1);
     --accordion-color-on-open: var(--black-2);
     --accordion-color-content: var(--grey-4);
 
-    /* header block colors */
-    --header-bgc: var(--white);
-    --header-color: var(--black);
-
-    /* preview block colors */
-    --preview-bgc: var(--grey-5);
-
-    /* footer block colors */
-    --footer-bgc: var(--white);
-    --footer-color: var(--black);
-
     /* skeleton block colors */
     --skeleton-bgc: var(--white);
     --skeleton-bgc-item: var(--grey-2);
     --skeleton-border: var(--grey-3);
+
+    /* Histogram */
+    --histogram-bgc: var(--white);
+    --histogram-border: var(--grey-3);
+    --histogram-color: var(--black-2);
+    --histogram-color-link: var(--blue-1);
+    --histogram-color-link-on-hover: var(--blue-2);
+    --histogram-bgc-chart: var(--blue-1);
 }
 
 html,
