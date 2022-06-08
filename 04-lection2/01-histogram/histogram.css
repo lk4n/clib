@@ -5,14 +5,12 @@
     border-radius: 8px;
 }
 
-.histogram__info {
-    display: flex;
-    justify-content: space-between;
+.histogram__header {
+    position: relative;
+    padding-right: 65px;
     font: 16px/24px Inter, sans-serif;
     color: var(--histogram-color);
 }
-
-.histogram__header {}
 
 .histogram__title {
     margin: 0;
@@ -27,7 +25,9 @@
 }
 
 .histogram__link {
-    margin-top: 3px;
+    position: absolute;
+    top: 3px;
+    right: 0;
     text-decoration: none;
     color: var(--histogram-color-link);
 }
