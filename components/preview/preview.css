@@ -1,3 +1,12 @@
 .preview {
     background-color: var(--preview-bgc);
 }
+
+.preview_container {
+    margin-top: 68px;
+    margin-bottom: 68px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}

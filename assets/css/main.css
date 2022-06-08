@@ -10,6 +10,7 @@
 @import './../../components/footer/footer.css';
 @import './../../components/container/container.css';
 @import './../../components/preview/preview.css';
+@import './../../components/card/card.css';
 
 /* vars */
 :root {
@@ -38,13 +39,17 @@
     /* header */
     --header-bgc: var(--white);
     --header-color: var(--black);
-
-    /* preview */
-    --preview-bgc: var(--grey-5);
-
+    
     /* footer */
     --footer-bgc: var(--white);
     --footer-color: var(--black);
+    
+    /* preview */
+    --preview-bgc: var(--grey-5);
+
+    /* card */
+    --card-bgc: var(--white);
+    --card-color: var(--black-2);
 
     /* button */
     --button-color: var(--white);
