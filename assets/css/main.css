@@ -39,11 +39,11 @@
     /* header */
     --header-bgc: var(--white);
     --header-color: var(--black);
-    
+
     /* footer */
     --footer-bgc: var(--white);
     --footer-color: var(--black);
-    
+
     /* preview */
     --preview-bgc: var(--grey-5);
 
@@ -68,6 +68,14 @@
     --accordion-color: var(--black-1);
     --accordion-color-on-open: var(--black-2);
     --accordion-color-content: var(--grey-4);
+
+    /* histogram */
+    --histogram-bgc: var(--white);
+    --histogram-border: var(--grey-3);
+    --histogram-color: var(--black-2);
+    --histogram-color-link: var(--blue-1);
+    --histogram-color-link-on-hover: var(--blue-2);
+    --histogram-bgc-chart: var(--blue-1);
 }
 
 html,
