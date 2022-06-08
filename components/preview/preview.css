@@ -3,7 +3,7 @@
     background-color: var(--preview-bgc);
 }
 
-.preview_container {
+.preview__inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
