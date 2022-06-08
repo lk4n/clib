@@ -11,6 +11,7 @@
 @import './../../components/container/container.css';
 @import './../../components/preview/preview.css';
 @import './../../components/card/card.css';
+@import './../../components/histogram/histogram.css';
 
 /* vars */
 :root {

@@ -12,6 +12,9 @@
 .card__content {
     flex: 1;
     padding: 25px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 .card__footer {
