@@ -6,6 +6,10 @@
 .preview__inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 30px;
+}
+
+.preview__card {
+    flex: 0 0 350px;
 }
