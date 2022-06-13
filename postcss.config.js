@@ -1,9 +1,9 @@
 module.exports = cfg => {
-    const dev = cfg.env === 'development';
+    const prod = cfg.env === 'production';
 
     return {
-        parser: 'postcss-scss',
-        map: dev ? { inline: true } : false,
+        syntax: 'postcss-scss',
+        map: prod ? false : { inline: true },
         plugins: [
             require('precss')({
                 lookup: { disable: true },
@@ -15,8 +15,10 @@ module.exports = cfg => {
             }),
             require('postcss-import'),
             require('postcss-nested'),
+            require('postcss-sort-media-queries'),
+            require('postcss-strip-inline-comments'),
             require('autoprefixer'),
-            dev ? null : require('cssnano')
+            prod ? require('cssnano') : null
         ],
     }
 }

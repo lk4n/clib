@@ -4,11 +4,11 @@
   "description": "Course Materials",
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
-    "fix": "stylelint --fix **/*.scss",
-    "fix-css": "stylelint --fix **/*.css",
-    "watch": "postcss ./assets/css/main.scss --output ./assets/css/main.css --env development --verbose --watch",
-    "dev": "postcss ./assets/css/main.scss --output ./assets/css/main.css --env development --verbose",
-    "build": "postcss ./assets/css/main.scss --output ./assets/css/main.min.css --env production --verbose"
+    "fix": "stylelint --fix **/*.scss --custom-syntax postcss-scss",
+    "fix-css": "stylelint --fix ./components/**/*.css ./assets/css/main.css",
+    "watch": "postcss ./assets/css/main.scss --output ./assets/css/main.css --verbose --watch",
+    "dev": "postcss ./assets/css/main.scss --output ./assets/css/main.css --verbose",
+    "prod": "postcss ./assets/css/main.scss --output ./assets/css/main.min.css --env production --verbose"
   },
   "browserslist": [
     "last 2 version"
@@ -38,6 +38,8 @@
     "postcss-import": "^14.1.0",
     "postcss-nested": "^5.0.6",
     "postcss-scss": "^4.0.4",
+    "postcss-sort-media-queries": "^4.2.1",
+    "postcss-strip-inline-comments": "^0.1.5",
     "precss": "^4.0.0",
     "stylelint": "^14.9.1"
   },
