@@ -2,7 +2,7 @@ module.exports = cfg => {
     const dev = cfg.env === 'development';
 
     return {
-        syntax: 'postcss-scss',
+        parser: 'postcss-scss',
         map: dev ? { inline: true } : false,
         plugins: [
             require('precss')({
@@ -16,7 +16,7 @@ module.exports = cfg => {
             require('postcss-import'),
             require('postcss-nested'),
             require('autoprefixer'),
-            dev ? null : require('cssnano')()
+            dev ? null : require('cssnano')
         ],
     }
 }
