@@ -15,15 +15,15 @@
     text-align: center;
     background-color: var(--footer-bgc);
     color: var(--footer-color);
-}
 
-.footer__title {
-    margin: 0;
-    font: 500 38px/48px Inter, sans-serif;
-}
-
-.footer__text {
-    margin: 32px auto 0;
-    max-width: 640px;
-    font: 400 16px/24px Inter, sans-serif;
+    &__title {
+        margin: 0;
+        font: 500 38px/48px Inter, sans-serif;
+    }
+    
+    &__text {
+        margin: 32px auto 0;
+        max-width: 640px;
+        font: 400 16px/24px Inter, sans-serif;
+    }
 }

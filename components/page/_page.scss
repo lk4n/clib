@@ -2,8 +2,8 @@
     min-height: 100%;
     display: flex;
     flex-flow: column;
-}
-
-.page_preview {
-    flex: 1;
+    
+    &_preview {
+        flex: 1;
+    }
 }

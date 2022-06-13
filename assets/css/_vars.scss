@@ -1,0 +1,69 @@
+:root {
+    /* common */
+    --white: #ffffff;
+    --black-1: #000000;
+    --black-2: #212429;
+    --pink: #F784AD;
+    --purple-1: #7048E8;
+    --purple-2: #5028C6;
+    --blue-1: #4263EB;
+    --blue-2: #2342C0;
+    --red: #F03D3E;
+    --grey-1: #F8F9FA;
+    --grey-2: #DDE2E5;
+    --grey-3: #ACB5BD;
+    --grey-4: #495057;
+    --grey-5: #F9FAFC;
+
+    --error: var(--red);
+    --success: var(--blue-1);
+
+    --primary: var(--blue-1);
+    --secondary: var(--purple-1);
+
+    /* header */
+    --header-bgc: var(--white);
+    --header-color: var(--black);
+
+    /* footer */
+    --footer-bgc: var(--white);
+    --footer-color: var(--black);
+
+    /* preview */
+    --preview-bgc: var(--grey-5);
+
+    /* card */
+    --card-bgc: var(--white);
+    --card-color: var(--black-2);
+
+    /* button */
+    --button-color: var(--white);
+    --button-color-alternate: var(--grey-4);
+    --button-bgc-primary: var(--primary);
+    --button-bgc-primary-on-hover: var(--blue-2);
+    --button-bgc-secondary: var(--secondary);
+    --button-bgc-secondary-on-hover: var(--purple-2);
+    --button-bgc-alternate: var(--white);
+    --button-border-alternate: var(--grey-3);
+    --button-border-alternate-on-hover: var(--black);
+
+    /* accordion */
+    --accordion-bgc: var(--white);
+    --accordion-border: var(--grey-3);
+    --accordion-color: var(--black-1);
+    --accordion-color-on-open: var(--black-2);
+    --accordion-color-content: var(--grey-4);
+
+    /* skeleton */
+    --skeleton-bgc: var(--white);
+    --skeleton-bgc-item: var(--grey-2);
+    --skeleton-border: var(--grey-3);
+
+    /* histogram */
+    --histogram-bgc: var(--white);
+    --histogram-bgc-chart: var(--blue-1);
+    --histogram-border: var(--grey-3);
+    --histogram-color: var(--black-2);
+    --histogram-color-link: var(--blue-1);
+    --histogram-color-link-on-hover: var(--blue-2);
+}
