@@ -1,15 +1,15 @@
 .preview {
-    padding: 68px 0;
-    background-color: var(--preview-bgc);
+  padding: 68px 0;
+  background-color: var(--preview-bgc);
  
-    &__inner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 30px;
-    }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
     
-    &__card {
-        flex: 0 0 350px;
-    }
+  &__card {
+    flex: 0 0 350px;
+  }
 }
