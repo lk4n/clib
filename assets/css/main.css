@@ -70,7 +70,7 @@
     --accordion-color-on-open: var(--black-2);
     --accordion-color-content: var(--grey-4);
 
-    /* skeleton block colors */
+    /* skeleton */
     --skeleton-bgc: var(--white);
     --skeleton-bgc-item: var(--grey-2);
     --skeleton-border: var(--grey-3);
@@ -87,4 +87,5 @@
 html,
 body {
     height: 100%;
+    font-family: Inter, sans-serif;
 }
