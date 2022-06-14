@@ -1,0 +1,14 @@
+.sidebar {
+  &__title {
+    margin: 0;
+    font: 20px/26px Inter, sans-serif;
+    color: var(--sidebar-color);
+  }
+
+  &__menu {
+    margin: 16px 0 32px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+}
