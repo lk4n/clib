@@ -9,16 +9,26 @@
   color: var(--footer-color);
 } */
 
-/* 136px padding-bottom too much as for me, 36px better */
+/* 136px padding-bottom too much as for me */
 .footer {
-  padding: 72px 0 36px;
+  padding: 56px 0;
   text-align: center;
   background-color: var(--footer-bgc);
   color: var(--footer-color);
 
   &__title {
-    margin: 0;
+    margin: 15px 0 0;
     font: 500 38px/48px Inter, sans-serif;
+  }
+
+  &__title_component {
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    /* Gray 3 */
+    color: var(--footer-color-component);
   }
 
   &__text {
