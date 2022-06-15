@@ -1,0 +1,26 @@
+.menu {
+  margin: 0;
+  list-style: none;
+  font: 16px/24px Inter, sans-serif;
+  color: var(--menu-color);
+
+  &__item {
+    &_current {
+      color: var(--menu-color-current);
+    }
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+    transition: padding 0.2s linear;
+
+    &:hover,
+    &:active {
+      padding-bottom: 2px;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+      border-bottom-color: inherit;
+    }
+  }
+}

@@ -24,10 +24,8 @@
 
   /* header */
   --header-bgc: var(--white);
-  --header-bgc-component: var(--grey-5);
+  --header-bgc-component-TODO: var(--grey-5);
   --header-color: var(--black-2);
-  --header-color-link: var(--grey-3);
-  --header-color-link-current: var(--black-2);
 
   /* footer */
   --footer-bgc: var(--white);
@@ -41,10 +39,14 @@
   --card-bgc: var(--white);
   --card-color: var(--black-2);
 
+  /* menu */
+  --menu-color: var(--grey-3);
+  --menu-color-current: var(--black-2);
+
   /* sidebar */
   --sidebar-color: var(--black-1);
-  --sidebar-color-link: var(--black-2);
-  --sidebar-color-link-current: var(--orange);
+  --sidebar-color-menu: var(--black-2);
+  --sidebar-color-menu-current: var(--orange);
 
   /* button */
   --button-color: var(--white);

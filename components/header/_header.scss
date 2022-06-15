@@ -20,43 +20,19 @@
     padding-top: 24px;
   }
 
-  &__link {
-    text-decoration: none;
-    color: var(--header-color-link);
-    transition: padding 0.2s linear;
-
-    &:hover,
-    &:active {
-      padding-bottom: 2px;
-      border-bottom: 2px solid var(--header-color-link);
-    }
+  &__navigation {
   }
 
-  &__navigation {
-    &-list {
-      margin: 0;
-      list-style: none;
-      
-      display: flex;
-      flex-wrap: wrap;
-      column-gap: 24px;
-    }
-    &-item {
-      font: 16px/24px Inter, sans-serif;
-
-      &_current {
-        color: var(--header-color-link-current);
-      }
-      &_current:hover {
-        border-color: inherit;
-      }
-    }
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
   }
 
   &__theme {
   }
-
-  &_component {
-    background: var(--header-bgc-component);
+  // TODO
+  &_component_TODO {
+    background: var(--header-bgc-component-TODO);
   }
 }
