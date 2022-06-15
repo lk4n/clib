@@ -11,7 +11,7 @@
     "prod": "postcss ./assets/css/main.scss --output ./assets/css/main.min.css --env production --verbose"
   },
   "browserslist": [
-    "last 2 version"
+    "last 3 version"
   ],
   "husky": {
     "hooks": {
@@ -34,6 +34,8 @@
     "cssnano": "^5.1.11",
     "mocha": "^7.1.2",
     "postcss": "^8.4.14",
+    "postcss-advanced-variables": "^3.0.1",
+    "postcss-at-rules-variables": "^0.3.0",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.1.0",
     "postcss-nested": "^5.0.6",
