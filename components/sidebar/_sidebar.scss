@@ -1,14 +1,45 @@
 .sidebar {
+  &__content {
+  }
+  &__section {
+    margin: 0 0 32px 0;
+  }
+
   &__title {
     margin: 0;
     font: 20px/26px Inter, sans-serif;
     color: var(--sidebar-color);
   }
 
-  &__menu {
-    margin: 16px 0 32px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 4px;
+  &__link {
+    text-decoration: none;
+    color: var(--menu-color-link);
+    transition: padding 0.2s linear;
+
+    &:hover,
+    &:active {
+      padding-bottom: 2px;
+      border-bottom: 2px solid var(--menu-color-link);
+    }
+  }
+
+  &__navigation {
+    margin: 16px 0 0 0;
+
+    &-items {
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+    }
+
+    &-item {
+      font: 14px/22px Inter, sans-serif;
+
+      &_current {
+        color: var(--menu-color-link-active);
+      }
+    }
   }
 }
