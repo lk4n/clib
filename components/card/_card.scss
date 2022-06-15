@@ -22,7 +22,7 @@
 
   &__title {
     margin: 0;
-    font: 500 21px/25px Roboto, sans-serif;
+    @include _font(21px, 25px, $font_secondary, 500);
     color: var(--card-color);
   }
 }

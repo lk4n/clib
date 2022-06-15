@@ -1,7 +1,7 @@
 .menu {
   margin: 0;
   list-style: none;
-  font: 16px/24px Inter, sans-serif;
+  @include _font(16px, 24px, $font_main);
   color: var(--menu-color);
 
   &__item {

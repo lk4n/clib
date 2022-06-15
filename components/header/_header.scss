@@ -12,7 +12,7 @@
 
   &__title {
     margin: 96px 0 77px;
-    font: 500 50px/64px Inter, sans-serif;
+    @include _font(50px, 64px, $font_main, 500);
   }
 
   &__logo {
@@ -31,8 +31,10 @@
 
   &__theme {
   }
+
   // TODO
   &_component_TODO {
     background: var(--header-bgc-component-TODO);
   }
+  // TODO
 }

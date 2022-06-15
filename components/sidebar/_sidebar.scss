@@ -1,13 +1,14 @@
 .sidebar {
   &__content {
   }
+
   &__section {
     margin: 0 0 32px 0;
   }
 
   &__title {
     margin: 0;
-    font: 20px/26px Inter, sans-serif;
+    @include _font(20px, 26px, $font_main);
     color: var(--sidebar-color);
   }
 
@@ -19,7 +20,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 4px;
-    font: 14px/22px Inter, sans-serif;
+    @include _font(14px, 22px, $font_main);
     color: var(--sidebar-color-menu);
 
     & .menu__item_current {

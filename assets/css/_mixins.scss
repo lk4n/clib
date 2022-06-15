@@ -1,0 +1,32 @@
+// Universal font include
+@mixin _font(
+  $font_size: false,
+  $line_height: false,
+  $font_family: false,
+  $font_weight: false,
+  $font_style: false,
+  $letter_spacing: false,
+  $text_transform: false
+) {
+  @if $font_size {
+    font-size: $font_size;
+  }
+  @if $line_height {
+    line-height: $line_height;
+  }
+  @if $font_family {
+    font-family: $font_family;
+  }
+  @if $font_weight {
+    font-weight: $font_weight;
+  }
+  @if $font_style {
+    font-style: $font_style;
+  }
+  @if $letter_spacing {
+    letter-spacing: $letter_spacing;
+  }
+  @if $text_transform {
+    text-transform: $text_transform;
+  }
+}

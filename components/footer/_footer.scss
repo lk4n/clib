@@ -18,21 +18,20 @@
 
   &__title {
     margin: 15px 0 0;
-    font: 500 38px/48px Inter, sans-serif;
+    @include _font(38px, 48px, $font_main, 500);
 
-    &_component {
+    //TODO
+    &_component_TODO {
       margin: 0;
-      font-size: 12px;
-      line-height: 18px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+      @include _font(12px, 18px, false, false, false, 0.04em, uppercase);
       color: var(--footer-color-component);
     }
+    //TODO
   }
 
   &__text {
     margin: 32px auto 0;
     max-width: 640px;
-    font: 400 16px/24px Inter, sans-serif;
+    @include _font(16px, 24px, $font_main);
   }
 }

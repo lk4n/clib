@@ -3,12 +3,12 @@
   background: var(--histogram-bgc);
   border: 1px solid var(--histogram-border);
   border-radius: 8px;
+  @include _font(16px, 24px, $font_main);
+  color: var(--histogram-color);
 
   &__header {
     position: relative;
     padding-right: 65px;
-    font: 16px/24px Inter, sans-serif;
-    color: var(--histogram-color);
   }
     
   &__title {
