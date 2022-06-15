@@ -19,15 +19,15 @@
   &__title {
     margin: 15px 0 0;
     font: 500 38px/48px Inter, sans-serif;
-  }
 
-  &__title_component {
-    margin: 0;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--footer-color-component);
+    &_component {
+      margin: 0;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--footer-color-component);
+    }
   }
 
   &__text {

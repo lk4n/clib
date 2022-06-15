@@ -19,7 +19,7 @@
     &:hover,
     &:active {
       padding-bottom: 2px;
-      border-bottom: 2px solid var(--menu-color-link);
+      border-bottom: 2px solid var(--sidebar-color-link);
     }
   }
 
@@ -29,6 +29,7 @@
     &-list {
       margin: 0;
       list-style: none;
+      
       display: flex;
       flex-direction: column;
       row-gap: 4px;
@@ -38,7 +39,11 @@
       font: 14px/22px Inter, sans-serif;
 
       &_current {
-        color: var(--menu-color-link-active);
+        color: var(--sidebar-color-link-current);
+      }
+
+      &_current:hover {
+        border-color: inherit;
       }
     }
   }

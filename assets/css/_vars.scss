@@ -24,7 +24,10 @@
 
   /* header */
   --header-bgc: var(--white);
+  --header-bgc-component: var(--grey-5);
   --header-color: var(--black-2);
+  --header-color-link: var(--grey-3);
+  --header-color-link-current: var(--black-2);
 
   /* footer */
   --footer-bgc: var(--white);
@@ -40,10 +43,8 @@
 
   /* sidebar */
   --sidebar-color: var(--black-1);
-
-  /* menu */
-  --menu-color-link: var(--black-2);
-  --menu-color-link-active: var(--orange);
+  --sidebar-color-link: var(--black-2);
+  --sidebar-color-link-current: var(--orange);
 
   /* button */
   --button-color: var(--white);
