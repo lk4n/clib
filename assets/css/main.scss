@@ -14,14 +14,15 @@
 @import './vars';
 
 // components
-@import './../../components/page/page';
 @import './../../components/header/header';
 @import './../../components/footer/footer';
 @import './../../components/container/container';
 @import './../../components/preview/preview';
+@import './../../components/page/page';
 
 @import './../../components/menu/menu';
 @import './../../components/sidebar/sidebar';
+@import './../../components/component/component';
 
 @import './../../components/card/card';
 @import './../../components/histogram/histogram';
