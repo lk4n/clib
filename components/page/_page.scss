@@ -1,12 +1,27 @@
 .page {
   min-height: 100%;
+  display: flex;
+  flex-flow: column;
 
-  &_flex {
-    display: flex;
-    flex-flow: column;
+  &_component {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-items: stretch;
+    background: var(--page-bgc-component);
   }
 
-  &__preview {
+  &__inner {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 56px;
+  }
+
+  &__component {
+    background: transparent;
+  }
+
+  &__main {
+    padding: 68px 0;
     flex: 1;
   }
 }

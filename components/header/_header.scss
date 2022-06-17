@@ -3,7 +3,7 @@
   color: var(--header-color);
 
   &__inner {
-    padding-bottom: 62px;
+    padding: 24px 0 62px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 57px;
@@ -17,7 +17,6 @@
 
   &__logo {
     flex: 1 0 110px;
-    padding-top: 24px;
   }
 
   &__navigation {
@@ -31,10 +30,4 @@
 
   &__theme {
   }
-
-  // TODO
-  &_component_TODO {
-    background: var(--header-bgc-component-TODO);
-  }
-  // TODO
 }
