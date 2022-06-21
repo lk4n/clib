@@ -4,9 +4,17 @@
   box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   border-radius: 12px;
 
+//margin: -2rem -2rem 1rem -2rem;
+//margin: -2rem -2rem 1rem -2rem;
+//margin: -2rem -2rem 1rem -2rem;
+//margin: -2rem -2rem 1rem -2rem;
+//margin: -2rem -2rem 1rem -2rem;
+// inspect https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-area
+// used negative margin for to override container padding
+
   &__title {
     margin: 0;
-    padding: 32px 0 0 48px;
+    padding:1 32px 0 0 48px;
     @include _font(28px, 38px, $font_main, 400);
     color: var(--component-color);
   }

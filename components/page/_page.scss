@@ -3,13 +3,6 @@
   display: flex;
   flex-flow: column;
 
-  &_component {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    justify-items: stretch;
-    background: var(--page-bgc-component);
-  }
-
   &__inner {
     display: grid;
     grid-template-columns: auto auto;
@@ -23,5 +16,13 @@
   &__main {
     padding: 68px 0;
     flex: 1;
+  }
+
+  // theme Component
+  &_theme_component {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-items: stretch;
+    background: var(--page-bgc-component);
   }
 }

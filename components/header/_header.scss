@@ -28,6 +28,11 @@
     column-gap: 24px;
   }
 
-  &__theme {
+  &__switcher {
+  }
+
+  // theme Component
+  &_theme_component {
+    background: transparent;
   }
 }
