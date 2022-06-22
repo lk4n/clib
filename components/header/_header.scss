@@ -1,15 +1,7 @@
 .header {
   background: var(--header-bgc);
   color: var(--header-color);
-
-  &__inner {
-    padding: 24px 0 41px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 57px;
-    align-items: baseline;
-  }
-
+  
   &__title {
     margin: 0 0 77px;
     @include _font(50px, 64px, $font_main, 500);
@@ -33,6 +25,11 @@
 
   // component page
   &_component {
+    padding: 24px 0 41px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 57px;
+    align-items: baseline;
     background: var(--header-bgc-component);
 
     & .header__inner {

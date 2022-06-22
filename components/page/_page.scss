@@ -1,5 +1,5 @@
 .page {
-  min-height: 100%;
+  height: 100%;
   display: flex;
   flex-flow: column;
 
@@ -11,14 +11,41 @@
   // component page
   &_component {
     display: grid;
+    grid-template-columns: 1fr minmax(175px, 229px) minmax(375px, 825px) 1fr;
     grid-template-rows: auto 1fr auto;
+    column-gap: 56px;
     background: var(--page-bgc-component);
 
+    @media screen and (max-width: 934px) {
+      column-gap: 0;
+    }
+
     & .page__header {
+      grid-column: 2 / 4;
+      grid-row: 1 / 2;
     }
+
     & .page__sidebar {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+
+      @media screen and (max-width: 766px) {
+        display: none;
+      }
     }
+
     & .page__preview {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+
+      @media screen and (max-width: 766px) {
+        grid-column: 1 / -1;
+      }
+    }
+
+    & .page__footer {
+      grid-column: 1 / -1;
+      grid-row: 3 / 4;
     }
 
     & .page__inner {

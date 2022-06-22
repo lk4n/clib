@@ -13,9 +13,7 @@
 
 <body>
   <div class="page page_component">
-    <header class="header header_component">
-      <div class="container">
-        <div class="header__inner">
+    <header class="header header_component page__header">
           <div class="logo header__logo">
             <a class="logo__link" href="#go-main">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,14 +43,11 @@
           </nav>
 
           <div class="header__switcher">&lt;Switcher&gt;</div>
-        </div>
-      </div>
     </header>
 
-    <div class="container">
-      <div class="page__inner">
 
-        <div class="sidebar">
+
+        <div class="sidebar page__sidebar">
           <div class="sidebar__content">
             <div class="sidebar__section">
               <h4 class="sidebar__title">Components</h4>
@@ -117,7 +112,7 @@
           </div>
         </div>
 
-        <main class="preview">
+        <main class="preview page__preview">
           <article class="component">
             <h1 class="component__title">Component name</h1>
             <section class="component__preview">
@@ -178,10 +173,9 @@ CSS</div>
           </article>
         </main>
         
-      </div>
-    </div>
 
-    <footer class="footer footer_component">
+
+    <footer class="footer footer_component page__footer">
       <p class="footer__title">Reusable component library</p>
     </footer>
 
