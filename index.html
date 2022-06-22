@@ -15,10 +15,40 @@
   <div class="page">
     <header class="header">
       <div class="container">
+        <div class="header__inner">
+          <div class="logo header__logo"> 
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30" height="30" fill="#212429" />
+              </svg>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="16" fill="#212429" />
+              </svg>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L32 32H0V0Z" fill="#212429" />
+              </svg>
+          </div>
+
+          <nav class="header__navigation">
+            <ul class="menu header__menu">
+              <li class="menu__item menu__item_current">
+                <a class="menu__link " href="#components">Components</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__switcher">&lt;Switcher&gt;</div>
+        </div>
+
         <h1 class="header__title">Reusable component library</h1>
       </div>
     </header>
-    <main class="preview page__main">
+    <main class="preview page__preview">
       <div class="container">
         <div class="preview__inner">
           <div class="card preview__card">
