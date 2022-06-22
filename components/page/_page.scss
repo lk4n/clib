@@ -1,5 +1,5 @@
 .page {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-flow: column;
 
@@ -37,6 +37,7 @@
     & .page__preview {
       grid-column: 3 / 4;
       grid-row: 2 / 3;
+      background: var(--page-bgc-component);
 
       @media screen and (max-width: 766px) {
         grid-column: 1 / -1;
