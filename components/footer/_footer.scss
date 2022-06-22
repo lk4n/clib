@@ -15,9 +15,9 @@
     @include _font(16px, 24px, $font_main);
   }
 
-  // theme Component
-  &_theme_component {
-    background: transparent;
+  // component
+  &_component {
+    background: var(--footer-bgc-component);
 
     & .footer__title {
       margin: 0;

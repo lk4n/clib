@@ -31,9 +31,9 @@
   &__switcher {
   }
 
-  // theme Component
-  &_theme_component {
-    background: transparent;
+  // component page
+  &_component {
+    background: var(--header-bgc-component);
 
     & .header__inner {
       padding: 24px 0 62px;
