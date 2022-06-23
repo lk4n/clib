@@ -1,8 +1,5 @@
 .sidebar {
-  // width: 229px;
-  
   &__content {
-    // padding: 0 16px;
   }
 
   &__section {
@@ -11,7 +8,7 @@
 
   &__title {
     margin: 0;
-    @include _font(20px, 26px, $font_main);
+    @include _font(20px, 26px, $font_main, 400);
     color: var(--sidebar-color);
   }
 
@@ -22,12 +19,6 @@
   &__menu {
     display: flex;
     flex-direction: column;
-    row-gap: 4px;
-    @include _font(14px, 22px, $font_main);
-    color: var(--sidebar-color-menu);
-
-    & .menu__item_current {
-      color: var(--sidebar-color-menu-current);
-    }
+    gap: 4px 0;
   }
 }

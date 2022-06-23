@@ -1,13 +1,13 @@
 .preview {
   background-color: var(--preview-bgc);
- 
+
   &__inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 30px;
   }
-    
+
   &__card {
     flex: 0 0 350px;
   }

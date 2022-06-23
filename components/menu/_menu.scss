@@ -1,7 +1,7 @@
 .menu {
   margin: 0;
   list-style: none;
-  @include _font(16px, 24px, $font_main);
+  @include _font(16px, 24px, $font_main, 400);
   color: var(--menu-color);
 
   &__item {
@@ -23,4 +23,15 @@
       border-bottom-color: inherit;
     }
   }
+
+  &_component {
+    @include _font(14px, 22px, $font_main, 400);
+    color: var(--menu-color-type-vertical);
+
+    & .menu__item_current {
+      color: var(--menu-color-type-vertical-current);
+    }
+  }
+
+  // &_mobile {} for burger menu
 }
