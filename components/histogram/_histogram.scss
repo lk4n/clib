@@ -37,7 +37,7 @@
   }
    
   &__chart {
-    margin-top: 39px;
+    margin-top: 20px;
     height: 50px;
     display: flex;
     flex-flow: row wrap-reverse;
@@ -53,4 +53,9 @@
       background: var(--histogram-color-link-on-hover);
     }
   }   
+
+  // modifiers
+  &_size_full {
+    width: 100%;
+  }
 }
