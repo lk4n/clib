@@ -1,0 +1,61 @@
+.histogram {
+  padding: 16px 24px 24px;
+  background: var(--histogram-bgc);
+  border: 1px solid var(--histogram-border);
+  border-radius: 8px;
+  @include _font(16px, 24px, $font_main);
+  color: var(--histogram-color);
+
+  &__header {
+    position: relative;
+    padding-right: 65px;
+  }
+    
+  &__title {
+    margin: 0;
+    font-weight: normal;
+    opacity: .8;
+  }
+    
+  &__number {
+    margin: 6px 0 0;
+    font-size: 20px;
+    line-height: 26px;
+  }
+    
+  &__link {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    text-decoration: none;
+    color: var(--histogram-color-link);
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--histogram-color-link-on-hover);
+    }
+  }
+   
+  &__chart {
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    flex-flow: row wrap-reverse;
+    column-gap: 1px;
+  }
+    
+  &__column {
+    flex: auto;
+    background: var(--histogram-bgc-chart);
+    transition: background 400ms ease-in;
+
+    &:hover {
+      background: var(--histogram-color-link-on-hover);
+    }
+  }   
+
+  // modifiers
+  &_size_full {
+    width: 100%;
+  }
+}

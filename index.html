@@ -2,130 +2,167 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Lex K">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <title>Layout</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Lex K">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <!-- <link rel="stylesheet" href="./assets/css/main.min.css"> -->
+  <title>Layout</title>
 </head>
 
 <body>
-    <div class="page">
-        <header class="header">
-            <div class="container">
-                <h1 class="header__title">Reusable component library</h1>
+  <div class="page">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo header__logo"> 
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="30" height="30" fill="#212429" />
+              </svg>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="16" fill="#212429" />
+              </svg>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L32 32H0V0Z" fill="#212429" />
+              </svg>
+          </div>
+
+          <nav class="header__navigation">
+            <ul class="menu header__menu">
+              <li class="menu__item menu__item_current">
+                <a class="menu__link " href="#components">Components</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">About</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__switcher">&lt;Switcher&gt;</div>
+        </div>
+
+        <h1 class="header__title">Reusable component library</h1>
+      </div>
+    </header>
+    <main class="preview page__preview">
+      <div class="container">
+        <div class="preview__inner">
+          <div class="card preview__card">
+            <div class="card__content">
+
             </div>
-        </header>
-        <main class="preview page_preview">
-            <div class="container">
-                <div class="preview__inner">
-                    <div class="card preview__card">
-                        <div class="card__content">
+            <div class="card__footer">
+              <h3 class="card__title">Tooltip</h3>
+              <p class="card__category">Container</p>
+            </div>
+          </div>
 
-                        </div>
-                        <div class="card__footer">
-                            <h3 class="card__title">Tooltip</h3>
-                        </div>
-                    </div>
+          <div class="card preview__card">
+            <div class="card__content">
 
-                    <div class="card preview__card">
-                        <div class="card__content">
+            </div>
+            <div class="card__footer">
+              <h3 class="card__title">Custom form elements</h3>
+              <p class="card__category">Custom category</p>
+            </div>
+          </div>
 
-                        </div>
-                        <div class="card__footer">
-                            <h3 class="card__title">Custom form elements</h3>
-                        </div>
-                    </div>
+          <div class="card preview__card">
+            <div class="card__content">
 
-                    <div class="card preview__card">
-                        <div class="card__content">
+            </div>
+            <div class="card__footer">
+              <h3 class="card__title">Calendar</h3>
+              <p class="card__category">Container</p>
+            </div>
+          </div>
 
-                        </div>
-                        <div class="card__footer">
-                            <h3 class="card__title">Calendar</h3>
-                        </div>
-                    </div>
+          <div class="card preview__card">
+            <div class="card__content">
 
-                    <div class="card preview__card">
-                        <div class="card__content">
+            </div>
+            <div class="card__footer">
+              <h3 class="card__title">Modal dialog</h3>
+              <p class="card__category">Container</p>
+            </div>
+          </div>
 
-                        </div>
-                        <div class="card__footer">
-                            <h3 class="card__title">Modal dialog</h3>
-                        </div>
-                    </div>
-
-                    <div class="card preview__card">
-                        <div class="card__content">
-                            <section class="histogram">
-                                <div class="histogram__header">
-                                    <h3 class="histogram__title">Total orders</h3>
-                                    <p class="histogram__number">50254</p>
-                                    <a href="#" class="histogram__link">View all</a>
-                                </div>
-                                <div class="histogram__chart">
-                                    <div class="histogram__column" style="height:100%"></div>
-                                    <div class="histogram__column" style="height:70%"></div>
-                                    <div class="histogram__column" style="height:44%"></div>
-                                    <div class="histogram__column" style="height:78%"></div>
-                                    <div class="histogram__column" style="height:44%"></div>
-                                    <div class="histogram__column" style="height:60%"></div>
-                                    <div class="histogram__column" style="height:78%"></div>
-                                    <div class="histogram__column" style="height:100%"></div>
-                                    <div class="histogram__column" style="height:22%"></div>
-                                    <div class="histogram__column" style="height:44%"></div>
-                                    <div class="histogram__column" style="height:60%"></div>
-                                    <div class="histogram__column" style="height:70%"></div>
-                                    <div class="histogram__column" style="height:22%"></div>
-                                    <div class="histogram__column" style="height:100%"></div>
-                                    <div class="histogram__column" style="height:22%"></div>
-                                    <div class="histogram__column" style="height:78%"></div>
-                                    <div class="histogram__column" style="height:60%"></div>
-                                    <div class="histogram__column" style="height:44%"></div>
-                                    <div class="histogram__column" style="height:70%"></div>
-                                    <div class="histogram__column" style="height:60%"></div>
-                                    <div class="histogram__column" style="height:22%"></div>
-                                    <div class="histogram__column" style="height:78%"></div>
-                                    <div class="histogram__column" style="height:70%"></div>
-                                    <div class="histogram__column" style="height:90%"></div>
-                                    <div class="histogram__column" style="height:60%"></div>
-                                    <div class="histogram__column" style="height:22%"></div>
-                                    <div class="histogram__column" style="height:60%"></div>
-                                    <div class="histogram__column" style="height:22%"></div>
-                                    <div class="histogram__column" style="height:70%"></div>
-                                    <div class="histogram__column" style="height:34%"></div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="card__footer">
-                            <h3 class="card__title">Histogram</h3>
-                        </div>
-                    </div>
-
-                    <div class="card preview__card">
-                        <div class="card__content">
-
-                        </div>
-                        <div class="card__footer">
-                            <h3 class="card__title">Avatar</h3>
-                        </div>
-                    </div>
-                    
+          <div class="card preview__card">
+            <div class="card__content">
+              <div class="histogram histogram_size_full">
+                <div class="histogram__header">
+                  <h3 class="histogram__title">Total orders</h3>
+                  <p class="histogram__number">50254</p>
+                  <a href="#" class="histogram__link">View all</a>
                 </div>
+                <div class="histogram__chart">
+                  <div class="histogram__column" style="height:100%"></div>
+                  <div class="histogram__column" style="height:70%"></div>
+                  <div class="histogram__column" style="height:44%"></div>
+                  <div class="histogram__column" style="height:78%"></div>
+                  <div class="histogram__column" style="height:44%"></div>
+                  <div class="histogram__column" style="height:60%"></div>
+                  <div class="histogram__column" style="height:78%"></div>
+                  <div class="histogram__column" style="height:100%"></div>
+                  <div class="histogram__column" style="height:22%"></div>
+                  <div class="histogram__column" style="height:44%"></div>
+                  <div class="histogram__column" style="height:60%"></div>
+                  <div class="histogram__column" style="height:70%"></div>
+                  <div class="histogram__column" style="height:22%"></div>
+                  <div class="histogram__column" style="height:100%"></div>
+                  <div class="histogram__column" style="height:22%"></div>
+                  <div class="histogram__column" style="height:78%"></div>
+                  <div class="histogram__column" style="height:60%"></div>
+                  <div class="histogram__column" style="height:44%"></div>
+                  <div class="histogram__column" style="height:70%"></div>
+                  <div class="histogram__column" style="height:60%"></div>
+                  <div class="histogram__column" style="height:22%"></div>
+                  <div class="histogram__column" style="height:78%"></div>
+                  <div class="histogram__column" style="height:70%"></div>
+                  <div class="histogram__column" style="height:90%"></div>
+                  <div class="histogram__column" style="height:60%"></div>
+                  <div class="histogram__column" style="height:22%"></div>
+                  <div class="histogram__column" style="height:60%"></div>
+                  <div class="histogram__column" style="height:22%"></div>
+                  <div class="histogram__column" style="height:70%"></div>
+                  <div class="histogram__column" style="height:34%"></div>
+                </div>
+              </div>
             </div>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <p class="footer__title">About</p>
-                <p class="footer__text">This project is a collection of professionally designed, pre-built, fully
-                    responsive
-                    HTML snippets you can drop into your projects. Get started by checking out our free preview
-                    components,
-                    or browsing the PNG previews in the categories you're most curious about.</p>
+            <div class="card__footer">
+              <h3 class="card__title">Histogram</h3>
+              <p class="card__category">Element</p>
             </div>
-        </footer>
-    </div>
+          </div>
+
+          <div class="card preview__card">
+            <div class="card__content">
+
+            </div>
+            <div class="card__footer">
+              <h3 class="card__title">Avatar</h3>
+              <p class="card__category">Element</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__title">About</p>
+        <p class="footer__text">This project is a collection of professionally designed, pre-built, fully
+          responsive
+          HTML snippets you can drop into your projects. Get started by checking out our free preview
+          components,
+          or browsing the PNG previews in the categories you're most curious about.</p>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>

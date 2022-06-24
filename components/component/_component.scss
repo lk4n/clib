@@ -1,0 +1,58 @@
+.component {
+  background: var(--component-bgc);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+
+  // margin: -2rem -2rem 1rem -2rem;
+  // inspect https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-area
+  // (?) use negative margin to make grey line (?)
+
+  &__title {
+    margin: 0;
+    // padding: 32px 106px 0 48px;
+    padding: 32px 48px 0;
+    @include _font(28px, 38px, $font_main, 400);
+    color: var(--component-color);
+  }
+
+  &__preview {
+    // padding: 58px 106px 64px 48px;
+    padding: 58px 48px 64px;
+  }
+
+  &__tabs {
+    &-header {
+      margin: 0 48px;
+      display: flex;
+      column-gap: 40px;
+    }
+
+    &-content {
+      // padding: 50px 106px 64px 42px;
+      padding: 50px 42px 64px;
+      border-top: 1px solid var(--component-border);
+    }
+
+    &-item {
+      white-space: pre;
+    }
+  }
+
+  &__link {
+    padding-bottom: 8px;
+    text-decoration: none;
+    @include _font(16px, 24px, $font_main, 400);
+    color: var(--component-color-tab-link);
+    transition: color 0.2s linear;
+
+    &:active,
+    &:hover {
+      color: var(--component-color-tab-link-current);
+    }
+
+    &_current {
+      color: var(--component-color-tab-link-current);
+      border-bottom: 5px solid var(--component-color-tab-link-current);
+    }
+  }
+}

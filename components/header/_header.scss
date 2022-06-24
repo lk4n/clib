@@ -1,0 +1,42 @@
+.header {
+  background: var(--header-bgc);
+  color: var(--header-color);
+
+  &__inner {
+    padding: 24px 0 41px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 57px;
+    align-items: baseline;
+  }
+
+  &__title {
+    margin: 0 0 77px;
+    @include _font(50px, 64px, $font_main, 500);
+  }
+
+  &__logo {
+    flex: 1 0 110px;
+  }
+
+  &__navigation {
+  }
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 24px;
+  }
+
+  &__switcher {
+  }
+
+  // component page
+  &_component {
+    background: var(--header-bgc-component);
+
+    & .header__inner {
+      padding: 24px 0 62px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.page {
+  min-height: 100%;
+  display: flex;
+  flex-flow: column;
+
+  &__preview {
+    padding: 68px 0;
+    flex: 1;
+  }
+
+  // component page
+  &_component {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: var(--page-bgc-component);
+
+    & .page__header {
+    }
+    & .page__sidebar {
+    }
+    & .page__preview {
+    }
+
+    & .page__inner {
+      display: grid;
+      grid-template-columns: minmax(175px, 229px) minmax(376px, 825px);
+      column-gap: 56px;
+    }
+  }
+}
