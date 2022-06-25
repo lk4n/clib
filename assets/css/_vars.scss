@@ -91,6 +91,15 @@
   --histogram-color: var(--black-2);
   --histogram-color-link: var(--blue-1);
   --histogram-color-link-on-hover: var(--blue-2);
+
+  // tooltip
+  --tooltip-color: var(--grey-2);
+  --tooltip-color-alternate: var(--grey-4);
+  --tooltip-bgc: var(--blue-1);
+  --tooltip-bgc-secondary: var(--purple-1);
+  --tooltip-bgc-alternate: var(--white);
+  --tooltip-bgc-black: var(--black-2);
+  --tooltip-border-alternate: var(--grey-3);
 }
 
 // Fonts
