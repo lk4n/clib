@@ -24,6 +24,7 @@
     }
   }
 
+  // component page
   &_component {
     @include _font(14px, 22px, $font_main, 400);
     color: var(--menu-color-type-vertical);
@@ -33,5 +34,5 @@
     }
   }
 
-  // &_mobile {} for burger menu
+  // &_mobile {} for burger menu, use with mod:component
 }
