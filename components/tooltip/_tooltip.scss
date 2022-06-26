@@ -11,7 +11,7 @@
   }
 
   &__bubble {
-    // display: none;
+    // displa y: none;
     position: absolute;
     bottom: calc(100% + 8px);
     left: 50%;
@@ -33,8 +33,8 @@
       top: 100%;
       right: 50%;
       transform: translateX(50%);
-      border: 8px solid transparent;
       color: var(--tooltip-bgc);
+      border: 8px solid transparent;
       border-top: 6px solid currentColor;
     }
   }
@@ -86,12 +86,12 @@
       left: calc(100% + 8px);
       bottom: unset;
       top: calc(50% + 2px);
-      transform: translate(0, -50%);
+      transform: translateY(-50%);
 
       &::after {
         right: 100%;
         top: 50%;
-        transform: translate(0, -50%);
+        transform: translateY(-50%);
         border-top: 6px solid transparent;
         border-right: 6px solid currentColor;
       }
@@ -102,12 +102,12 @@
       bottom: unset;
       right: calc(100% + 8px);
       top: calc(50% + 2px);
-      transform: translate(0, -50%);
+      transform: translateY(-50%);
 
       &::after {
         top: 50%;
         left: 100%;
-        transform: translate(0, -50%);
+        transform: translateY(-50%);
         border-top: 6px solid transparent;
         border-left: 6px solid currentColor;
       }
