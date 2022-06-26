@@ -11,9 +11,9 @@
   }
 
   &__bubble {
-    // displa y: none;
+    display: none;
     position: absolute;
-    bottom: calc(100% + 8px);
+    bottom: calc(100% + 7px);
     left: 50%;
     transform: translateX(-50%);
     padding: 13px 21px;
@@ -52,7 +52,7 @@
     &_alternate .tooltip__bubble {
       color: var(--tooltip-color-alternate);
       background: var(--tooltip-bgc-alternate);
-      border: 1px solid var(--tooltip-border-alternate);
+      outline: 1px solid var(--tooltip-border-alternate);
 
       &::after {
         color: var(--tooltip-border-alternate);
