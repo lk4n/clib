@@ -23,6 +23,11 @@
   --primary: var(--blue-1);
   --secondary: var(--purple-1);
 
+  //TODO (?) Component like approach for vars
+  //    1. Make common naming, e.g. color, background, border, etc
+  //    2. Redefine for each component using component scope vars
+  // @src https://habrastorage.org/r/w1560/getpro/habr/post_images/e1b/0a3/1f2/e1b0a31f2f0135e0a40efb157803c861.png
+
   // page
   --page-bgc-component: var(--grey-5);
 
