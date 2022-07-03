@@ -1,18 +1,22 @@
 .calendar {
   width: 100%;
-  max-width: 300px;
+  // max-width: 300px;
+  min-width: 230px;
   padding: 28px 26px;
+  color: var(--calendar-color);
   background: var(--calendar-bgc);
   border: 1px solid var(--calendar-border);
   border-radius: 8px;
+  text-align: center;
 
   &__title {
+    margin: 0;
     @include _font(20px, 24px, $font_main, 600);
-    color: var(--calendar-color);
   }
 
   &__wrapper {
     position: relative;
+    margin-top: 24px;
     padding-bottom: 100%;
   }
 
@@ -22,37 +26,41 @@
     left: 0;
     bottom: 0;
     right: 0;
-  }
-
-  &__days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    // grid-template-rows: repeat(7, 1fr);
   }
 
-  &__day {
-    @include _font(14px, 20px, $font_main, 400);
-    color: var(--calendar-color-day);
-  }
-
-  &__dates {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-  }
-
-  &__date {
-    width: 36px;
-    height: 36px;
-    @include _font(16px, 20px, $font_alternate, 400);
+  &__item {
     color: var(--calendar-color);
     background-color: var(--calendar-bgc);
-    border: none;
 
-    &:hover,
-    &:focus {
+    &_day {
+      @include _font(14px, 20px, $font_main, 400);
+      color: var(--calendar-color-day);
+    }
+
+    &_date {
+      display: grid; // Tag independence. No need for button tag but for other
+      place-items: center;
+      padding: 0;
+      @include _font(16px, 20px, $font_alternate, 400);
+      cursor: pointer;
+      border: none;
       outline: none;
-      color: var(--calendar-color);
-      background: var(--calendar-bgc-range);
+
+      &:hover,
+      &:focus {
+        color: var(--calendar-color);
+        background: var(--calendar-bgc-range);
+        box-shadow: inset 1px 1px 15px 0px #b7c4e2;
+      }
+
+      //TODO Way to exclude empty cell from tab order
+      &:empty {
+        pointer-events: none;
+        opacity: 0;
+      }
     }
 
     &_range {
@@ -61,7 +69,7 @@
       &_start,
       &_end {
         background: var(--calendar-bgc-range-start-end);
-        color: #ffffff;
+        color: var(--calendar-color-range-start-end);
       }
     }
   }
