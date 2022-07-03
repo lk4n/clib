@@ -2,20 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Lex K">
-    <title>Component: Modal</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../../assets/css/main.css">
-    <style>
-        .demo {}
+  <meta charset="utf-8">
+  <meta name="author" content="Lex K">
+  <title>Component: Modal</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../../assets/css/main.css">
+  <style>
+    .demo {}
 
-        .demo__item {}
-    </style>
+    .demo__item {
+      width: 428px;
+    }
+  </style>
 </head>
 
 <body>
+  <button id="modal-open" class="button button_primary">Open modal</button>
+
+  <div id="modal" class="modal">
+
+    <div class="modal__title">Modal title</div>
+
+    <div class="modal__content">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+      velit mollit. Exercitation veniam consequat sunt nostrud amet.
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+      velit mollit. Exercitation veniam consequat sunt nostrud amet.
+    </div>
+
+    <div id="modal-close" class="modal__close">close</div>
+  </div>
+
 </body>
 <script src="./index.js"></script>
 
