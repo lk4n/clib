@@ -13,20 +13,23 @@
 // vars
 @import './vars';
 
-// components
-@import './../../components/header/header';
-@import './../../components/footer/footer';
-@import './../../components/container/container';
-@import './../../components/preview/preview';
-@import './../../components/page/page';
-
-@import './../../components/logo/logo';
-@import './../../components/menu/menu';
-@import './../../components/sidebar/sidebar';
-@import './../../components/component/component';
-@import './../../components/card/card';
-
-
+// Components
+//  |
+//  elements
 @import './../../components/button/button';
 @import './../../components/histogram/histogram';
+//  |
+//  containers
 @import './../../components/tooltip/tooltip';
+@import './../../components/card/card';
+@import './../../components/logo/logo';
+@import './../../components/menu/menu';
+//  |
+//  templates
+@import './../../components/sidebar/sidebar';
+@import './../../components/component/component';
+@import './../../components/preview/preview';
+@import './../../components/container/container';
+@import './../../components/header/header';
+@import './../../components/footer/footer';
+@import './../../components/page/page';

@@ -3,9 +3,9 @@
   background: var(--histogram-bgc);
   border: 1px solid var(--histogram-border);
   border-radius: 8px;
-  @include _font(16px, 24px, $font_main);
+  @include _font(16px, 24px, $font_main, 400);
   color: var(--histogram-color);
-
+ 
   &__header {
     position: relative;
     padding-right: 65px;
@@ -47,7 +47,7 @@
   &__column {
     flex: auto;
     background: var(--histogram-bgc-chart);
-    transition: background 400ms ease-in;
+    transition: background 300ms ease-in;
 
     &:hover {
       background: var(--histogram-color-link-on-hover);
