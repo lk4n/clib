@@ -1,7 +1,7 @@
 .calendar {
   width: 100%;
-  // max-width: 300px;
   min-width: 230px;
+  // max-width: 300px;
   padding: 28px 26px;
   color: var(--calendar-color);
   background: var(--calendar-bgc);
@@ -40,6 +40,17 @@
       color: var(--calendar-color-day);
     }
 
+    &_range {
+      background: var(--calendar-bgc-range);
+    }
+
+    &_date:focus,
+    &_range_start,
+    &_range_end {
+      background: var(--calendar-bgc-range-start-end);
+      color: var(--calendar-color-range-start-end);
+    }
+
     &_date {
       display: grid; // Tag independence. No need for button tag but for other
       place-items: center;
@@ -50,7 +61,7 @@
       outline: none;
 
       &:hover,
-      &:focus {
+      &:focus-visible {
         color: var(--calendar-color);
         background: var(--calendar-bgc-range);
         box-shadow: inset 1px 1px 15px 0px #b7c4e2;
@@ -60,16 +71,6 @@
       &:empty {
         pointer-events: none;
         opacity: 0;
-      }
-    }
-
-    &_range {
-      background: var(--calendar-bgc-range);
-
-      &_start,
-      &_end {
-        background: var(--calendar-bgc-range-start-end);
-        color: var(--calendar-color-range-start-end);
       }
     }
   }
