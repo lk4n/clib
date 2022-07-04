@@ -1,0 +1,77 @@
+.calendar {
+  width: 100%;
+  min-width: 230px;
+  // max-width: 300px;
+  padding: 28px 26px;
+  color: var(--calendar-color);
+  background: var(--calendar-bgc);
+  border: 1px solid var(--calendar-border);
+  border-radius: 8px;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    @include _font(20px, 24px, $font_main, 600);
+  }
+
+  &__wrapper {
+    position: relative;
+    margin-top: 24px;
+    padding-bottom: 100%;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    // grid-template-rows: repeat(7, 1fr);
+  }
+
+  &__item {
+    color: var(--calendar-color);
+    background-color: var(--calendar-bgc);
+
+    &_day {
+      @include _font(14px, 20px, $font_main, 400);
+      color: var(--calendar-color-day);
+    }
+
+    &_range {
+      background: var(--calendar-bgc-range);
+    }
+
+    &_date:focus,
+    &_range_start,
+    &_range_end {
+      background: var(--calendar-bgc-range-start-end);
+      color: var(--calendar-color-range-start-end);
+    }
+
+    &_date {
+      display: grid; // Tag independence. No need for button tag but for other
+      place-items: center;
+      padding: 0;
+      @include _font(16px, 20px, $font_alternate, 400);
+      cursor: pointer;
+      border: none;
+      outline: none;
+
+      &:hover,
+      &:focus-visible {
+        color: var(--calendar-color);
+        background: var(--calendar-bgc-range);
+        box-shadow: inset 1px 1px 15px 0px #b7c4e2;
+      }
+
+      //TODO Way to exclude empty cell from tab order
+      &:empty {
+        pointer-events: none;
+        opacity: 0;
+      }
+    }
+  }
+}

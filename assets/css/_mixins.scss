@@ -1,4 +1,4 @@
-// Universal font include
+// Font Snippet
 @mixin _font(
   $font_size: false,
   $line_height: false,
@@ -29,4 +29,17 @@
   @if $text_transform {
     text-transform: $text_transform;
   }
+}
+
+//Grid Fluid Columns Snippet
+//
+//grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+//
+// > This is better for small screens, once min() is better supported
+//grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+@mixin _grid-tc($width, $repeat_count: false) {
+  @if not $repeat_count {
+    $repeat_count: auto-fit;
+  }
+  grid-template-columns: repeat($repeat_count, minmax($width, 1fr));
 }

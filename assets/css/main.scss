@@ -13,7 +13,8 @@
 // vars
 @import './vars';
 
-// components
+//TODO Re-arrange blocks from smaller to bigger(simple to complex) and thus make sure redefinition will be applied, or use BEM tools
+
 @import './../../components/header/header';
 @import './../../components/footer/footer';
 @import './../../components/container/container';
@@ -28,3 +29,4 @@
 
 @import './../../components/histogram/histogram';
 @import './../../components/tooltip/tooltip';
+@import './../../components/calendar/calendar';

@@ -9,6 +9,9 @@
   --purple-2: #5028c6;
   --blue-1: #4263eb;
   --blue-2: #2342c0;
+  --blue-3: #334d6e;
+  --blue-4: #90a0b7;
+  --blue-5: #eceffd;
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
@@ -22,6 +25,11 @@
 
   --primary: var(--blue-1);
   --secondary: var(--purple-1);
+
+  //TODO (?) Component like approach for vars
+  //    1. Make common naming, e.g. color, background, border, etc
+  //    2. Redefine for each component using component scope vars
+  // @src https://habrastorage.org/r/w1560/getpro/habr/post_images/e1b/0a3/1f2/e1b0a31f2f0135e0a40efb157803c861.png
 
   // page
   --page-bgc-component: var(--grey-5);
@@ -100,8 +108,18 @@
   --tooltip-bgc-alternate: var(--white);
   --tooltip-bgc-black: var(--black-2);
   --tooltip-border-alternate: var(--grey-3);
+
+  // calendar
+  --calendar-color: var(--blue-3);
+  --calendar-color-range-start-end: var(--white);
+  --calendar-color-day: var(--blue-4);
+  --calendar-bgc: var(--white);
+  --calendar-bgc-range: var(--blue-5);
+  --calendar-bgc-range-start-end: var(--blue-1);
+  --calendar-border: var(--grey-3);
 }
 
 // Fonts
 $font_main: Inter, sans-serif;
 $font_secondary: Roboto, sans-serif;
+$font_alternate: 'Source Sans Pro', sans-serif;

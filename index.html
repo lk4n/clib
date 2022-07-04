@@ -16,16 +16,16 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <div class="logo header__logo"> 
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="30" height="30" fill="#212429" />
-              </svg>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="32" height="32" rx="16" fill="#212429" />
-              </svg>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0L32 32H0V0Z" fill="#212429" />
-              </svg>
+          <div class="logo header__logo">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="30" height="30" fill="#212429" />
+            </svg>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="16" fill="#212429" />
+            </svg>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0L32 32H0V0Z" fill="#212429" />
+            </svg>
           </div>
 
           <nav class="header__navigation">
@@ -48,13 +48,16 @@
         <h1 class="header__title">Reusable component library</h1>
       </div>
     </header>
+    <!--TODO Rename main tag to .main. .preview must be folded to .main like .component from templatee.html -->
     <main class="preview page__preview">
       <div class="container">
         <div class="preview__inner">
+          <!--TODO change .card from div to a -->
           <div class="card preview__card">
             <div class="card__content">
 
             </div>
+            <!--TODO Rename to card__header for better semantics, place before card__content, use flex-order -->
             <div class="card__footer">
               <h3 class="card__title">Tooltip</h3>
               <p class="card__category">Container</p>
