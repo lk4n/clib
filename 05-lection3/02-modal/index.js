@@ -9,11 +9,17 @@
 
   modalOpen.addEventListener('click', () => {
     modal.style.display = 'block';
-    document.body.overflow = 'hidden';
+    // document.body.overflow = 'hidden';       --incorrect
+    document.body.style.overflow = 'hidden';
+    //aria magic
+    document.body.setAttribute('aria-hidden', 'true');
   });
 
   close.addEventListener('click', () => {
     modal.style.display = 'none';
-    document.body.overflow = 'initial';
+    // document.body.overflow = 'initial';      --incorrect
+    document.body.style.overflow = 'initial';
+    //aria magic
+    document.body.removeAttribute('aria-hidden');
   });
 })();
