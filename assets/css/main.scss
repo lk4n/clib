@@ -2,7 +2,7 @@
 @import './sanitize';
 
 // tools
-@import 'mixins';
+@import './mixins';
 
 // fonts
 @import './../fonts/fonts';
@@ -17,9 +17,9 @@
 //  |
 //  elements
 @import './../../components/button/button';
-@import './../../components/skeleton/skeleton';
 //  |
 //  containers
+@import './../../components/skeleton/skeleton';
 @import './../../components/accordion/accordion';
 @import './../../components/histogram/histogram';
 @import './../../components/tooltip/tooltip';
