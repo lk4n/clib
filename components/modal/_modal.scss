@@ -1,16 +1,11 @@
 .modal {
   display: none;
-
-  &:before {
-    content: '';
-    background: rgb(0 0 0 / 0.2);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-  }
+  background: rgb(0 0 0 / 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
   &__dialog {
     padding: 33px 40px;
@@ -22,9 +17,8 @@
     color: var(--modal-color);
     background: var(--modal-bgc);
     border-radius: 8px;
-    z-index: 11;
 
-    &_size_medium {
+    &_type_notice {
       width: 428px;
     }
   }
