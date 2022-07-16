@@ -1,0 +1,58 @@
+.skeleton {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  row-gap: 24px;
+  /* padding: 24px; */
+  padding: 24px 40px 32px 24px;
+  border: 1px solid var(--skeleton-border);
+  border-radius: 8px;
+  background: var(--skeleton-bgc);
+
+  &__row {
+    flex: 1;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  &__column {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    row-gap: 8px;
+  }
+
+  &__circle {
+    flex: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--skeleton-bgc-item);
+  }
+
+  /*  width:100% and not flex-grow:1 because we dont not know flex-direction thus flex-basis:auto can mess up width and heigh */
+  &__line {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(
+      92.51deg,
+      #dde2e5 6.44%,
+      #e2e6e8 38.47%,
+      #f3f5f5 56.48%,
+      #e3e7ea 77.5%,
+      #dde2e5 102.52%
+    );
+
+    &_size {
+      &_small {
+        width: 40%;
+      }
+
+      &_medium {
+        width: 60%;
+      }
+    }
+  }
+}

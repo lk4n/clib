@@ -1,0 +1,52 @@
+.accordion {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  row-gap: 8px;
+  @include _font(16px, 24px, $font_main, 400);
+  background: var(--accordion-bgc);
+
+  &__item {
+    border: 1px solid var(--accordion-border);
+    border-radius: 8px;
+    /* box-shadow: 0 0.1rem 1rem -0.5rem rgba(0, 0, 0, 0.4); */
+    color: var(--accordion-color);
+    overflow: hidden;
+
+    &[open] {
+      color: var(--accordion-color-on-open);
+    }
+
+    &[open] .accordion__arrow {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    padding: 24px 32px;
+    list-style: none;
+    cursor: pointer;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &__arrow {
+    width: 25px;
+    height: 25px;
+    background: transparent
+      url("data:image/svg+xml,%3Csvg width='18' height='10' viewBox='0 0 18 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L9 9L17 1' stroke='%23495057' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+      center no-repeat;
+  }
+
+  &__content {
+    /* margin: -10px 0 0;  conflicts with summary:focus outline */
+    padding: 0 32px 32px 32px;
+    color: var(--accordion-color-content);
+  }
+}

@@ -1,0 +1,44 @@
+.modal {
+  display: none;
+  background: rgb(0 0 0 / 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &__dialog {
+    padding: 33px 40px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include _font(16px, 24px, $font_main, 400);
+    color: var(--modal-color);
+    background: var(--modal-bgc);
+    border-radius: 8px;
+
+    &_type_notice {
+      width: 428px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  &__title {
+    margin: 0 0 14px;
+    @include _font(20px, 24px, false, 600);
+    color: var(--modal-color-title);
+  }
+
+  &__content {
+  }
+}

@@ -2,7 +2,7 @@
 @import './sanitize';
 
 // tools
-@import 'mixins';
+@import './mixins';
 
 // fonts
 @import './../fonts/fonts';
@@ -13,20 +13,26 @@
 // vars
 @import './vars';
 
-//TODO Re-arrange blocks from smaller to bigger(simple to complex) and thus make sure redefinition will be applied, or use BEM tools
-
-@import './../../components/header/header';
-@import './../../components/footer/footer';
-@import './../../components/container/container';
-@import './../../components/preview/preview';
-@import './../../components/page/page';
-
+// Components
+//  |
+//  elements
+@import './../../components/button/button';
+//  |
+//  containers
+@import './../../components/skeleton/skeleton';
+@import './../../components/accordion/accordion';
+@import './../../components/histogram/histogram';
+@import './../../components/tooltip/tooltip';
+@import './../../components/modal/modal';
+//  |
+//  templates
+@import './../../components/card/card';
 @import './../../components/logo/logo';
 @import './../../components/menu/menu';
 @import './../../components/sidebar/sidebar';
 @import './../../components/component/component';
-@import './../../components/card/card';
-
-@import './../../components/histogram/histogram';
-@import './../../components/tooltip/tooltip';
-@import './../../components/calendar/calendar';
+@import './../../components/preview/preview';
+@import './../../components/container/container';
+@import './../../components/header/header';
+@import './../../components/footer/footer';
+@import './../../components/page/page';

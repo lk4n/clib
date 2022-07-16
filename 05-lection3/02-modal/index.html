@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<!-- Страница с модалкой -->
-<html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./modal.css">
-        <title>Modal</title>
-    </head>
-    <body>
-    </body>
-    <script src="./index.js"></script> 
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Lex K">
+  <title>Component: Modal</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../../assets/css/main.css">
+  <style>
+    body {
+      height: 2000px;
+    }
+
+    .main {
+      padding: 20px;
+    }
+
+    .demo {
+      display: grid;
+      place-items: center;
+      height: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="main" role="main">
+    <div class="demo">
+      <h1>Title for main content</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur optio, repellat libero numquam nihil ea
+        modi iure eaque quis atque sit. Quod hic odio aliquid! Aliquid illo inventore hic nesciunt deleniti odit maxime
+        excepturi earum dolores laudantium magni quisquam ratione, laborum sunt, pariatur iste vitae corporis
+        doloremque,
+        distinctio odio. Debitis, delectus possimus? Incidunt, dolore? Perspiciatis aliquid exercitationem provident
+        dolore et. Reiciendis eius odio impedit aspernatur itaque deleniti, molestias autem facere est nesciunt quam, et
+        nihil inventore qui quasi dolore? Aliquid a officiis quasi laudantium dolor sunt. Provident explicabo nam
+        reiciendis facere est similique rerum ratione quos, dolore doloremque consequatur voluptatem.</p>
+
+      <button id="modal-open" class="button button_primary">Open modal</button>
+    </div>
+  </main>
+
+  <div id="modal" class="modal" role="dialog">
+    <div class="modal__dialog modal__dialog_type_notice">
+      <h2 class="modal__title" tabindex="0">Notify title</h2>
+      <div class="modal__content">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+        velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+        velit mollit. Exercitation veniam consequat sunt nostrud amet.
+      </div>
+      <button type="button" class="modal__close" id="modal-close" aria-label="Close notify dialog">
+        <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z"
+            fill="#212429" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+            fill="#212429" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</body>
+<script src="./index.js"></script>
+
 </html>
